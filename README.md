@@ -1,7 +1,8 @@
-I am a software engineer from the UK, leading the Operating Systems team for
-the Nuvia SoCs at [Qualcomm](https://nuviainc.com/) (and Nuvia
-pre-acquisition) where we're creating new SoCs with leading performance and
-energy efficiency for the data center.
+I am a software engineer from the UK, working at
+[Qualcomm](https://www.qualcomm.com/home) (and Nuvia pre-acquisition) where
+amongst other things I'm responsible for pre-silicon software enablement
+covering application processor firmware, operating systems and virtual
+platforms on our custom CPU designs.
 
 Prior to Nuvia/Qualcomm, I was the engineering team lead for
 [Ksplice](http://ksplice.oracle.com/) at Oracle which provides rebootless OS
@@ -10,6 +11,15 @@ things low-level. I have designed three CPU's - a RISC-V RV32IMA core, a [x86
 compatible](https://github.com/jamieiles/80x86) and another [home-grown 32-bit
 RISC](https://github.com/jamieiles/oldland-cpu), all with SoC reference
 designs.
+
+My RV32IMA RISC-V core is implemented in SystemVerilog and offers ~2.61
+CoreMark/MHz. The core implements the privileged architecture with SSTC and
+Sscofpmf extensions and runs mainline Linux. I implemented a number unique
+tracing techniques to record and replay execution to generate ELF core-files
+for software debug. The core is a scalar design with parallel execution units
+and out of order completion, register rename and dynamic branch prediction.
+The system runs on a Spartan 7 FPGA and has been hardened with OpenLane for
+the SKY130A process.
 
 I have created an [80186](https://github.com/jamieiles/80x86) compatible IP
 core from scratch which currently runs at 60MHz on a Cyclone V FPGA in ~1750
@@ -20,14 +30,6 @@ reference design includes an SDRAM controller, MCGA graphics, PS/2
 keyboard+mouse controller, fixed disk emulation on an SD card, lightweight
 PIC+PIT implementations and a BIOS. The system can run a wide range of DOS
 based applications with good performance.
-
-The [Oldland CPU](https://github.com/jamieiles/oldland-cpu) is my first
-home-grown CPU, a full-featured 32-bit RISC CPU, written in Verilog and
-synthesizable on Intel FPGAs. The CPU features a 5 stage pipeline, privilege
-modes, caches, TLB's and a debug controller. The SoC has an SDRAM controller,
-SPI master, UART, timers, interrupt controller and other peripherals.  I have
-also ported binutils, gcc, newlib, u-boot and RTEMS to the Oldland
-architecture.
 
 See the rest of my projects on GitHub and more information on my [personal
 website](https://www.jamieiles.com).
