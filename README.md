@@ -1,6 +1,6 @@
-I am a software engineer from the UK, working at
+I am a software engineer from the UK, previously working at
 [Qualcomm](https://www.qualcomm.com/home) (and Nuvia pre-acquisition) where
-amongst other things I'm responsible for pre-silicon software enablement
+amongst other things I was responsible for pre-silicon software enablement
 covering application processor firmware, operating systems and virtual
 platforms on our custom CPU designs.
 
